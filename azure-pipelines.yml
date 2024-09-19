@@ -21,3 +21,12 @@ stages:
         displayName: 'Running integrationTest'
         steps:
           - script: echo 'Running Springdemo app unit test'
+  
+  - stage: 'QATest'
+    displayName: 'QA Test'
+    jobs:
+      - job: 'QATest'
+        displayName: 'Running QATest'
+        steps:
+          - script: echo 'Running Springdemo app unit test'
+      
